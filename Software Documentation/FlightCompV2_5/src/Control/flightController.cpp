@@ -1,4 +1,4 @@
-#include "FlightController.h"
+#include "flightController.h"
 
 // 1. Constructor with Member Initializer List
 // This is where we wire the PID objects to our variables and config constants!
