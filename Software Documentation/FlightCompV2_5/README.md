@@ -9,7 +9,7 @@ FlightCompV2.5 is a modular, PID-controlled flight computer designed for model r
 * **Active Stabilization:** Uses a PID control loop to actuate servos for flight correction.
 * **Sensor Fusion:** Employs Kalman filters to process raw IMU data (MPU6050) for stable orientation estimates.
 * **Altitude Sensing:** Utilizes a BMP280 barometer for accurate real-time altitude tracking.
-* **Automated Recovery:** Detects apogee based on altitude and acceleration triggers to deploy a parachute via servo.
+* **Automated Recovery:** Detects apogee using altitude-based logic to deploy a parachute via servo.
 * **Modular Architecture:** Clean separation between configuration, hardware drivers, and control logic.
 
 ### Code Structure:
