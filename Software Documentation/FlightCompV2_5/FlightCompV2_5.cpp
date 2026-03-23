@@ -2,10 +2,10 @@
 #include <Wire.h>
 #include <Servo.h>
 
-#include "src/Config/FlightConfig.h"
-#include "src/Drivers/Driver_MPU6050.h"
-#include "src/Drivers/Driver_BMP280.h"
-#include "src/Control/FlightController.h"
+#include "src/Config/flightConfig.h"
+#include "src/Drivers/driver_MPU6050.h"
+#include "src/Drivers/driver_BMP280.h"
+#include "src/Control/flightController.h"
 // #include "src/Comms/Telemetry.h"
 
 
