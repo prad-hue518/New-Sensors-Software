@@ -19,6 +19,9 @@ FlightController::FlightController():
     
 }
 
+// Z axis of mpu = perpendicular to surface of mpu and in the direction from black processor in the centre of mpu
+// X axis of mpu = in the direction connection black processor and yellowish gold rectange
+
 
 void FlightController::init() {
 
