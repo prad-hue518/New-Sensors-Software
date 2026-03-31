@@ -20,11 +20,11 @@ bool Driver_BMP581::init() {
     }
     
   
-    bmp.setPowerMode(bmp5xx_powermode_t::BMP5XX_POWERMODE_NORMAL);                   // Operating mode - normal mode for continuous measurements
     bmp.setTemperatureOversampling(bmp5xx_oversampling_t::BMP5XX_OVERSAMPLING_1X);   // Temp. oversampling
     bmp.setPressureOversampling(bmp5xx_oversampling_t::BMP5XX_OVERSAMPLING_4X);      // Pressure oversampling    
     bmp.setIIRFilterCoeff(bmp5xx_iir_filter_t::BMP5XX_IIR_FILTER_COEFF_3);           // Filtering coefficient - 3 in BMP581 might be similar to 4 in BMP280, but must compare datasheets for exact behavior
     bmp.setOutputDataRate(bmp5xx_odr_t::BMP5XX_ODR_240_HZ);                           // Standby time - 240 Hz means ~4 ms bw measurements. Need to find setting to bring down to 1ms
+    bmp.setPowerMode(bmp5xx_powermode_t::BMP5XX_POWERMODE_NORMAL);                   // Operating mode - normal mode for continuous measurements
     
     bmp.enablePressure(true); 
     
