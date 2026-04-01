@@ -32,6 +32,7 @@ void setup() {
     digitalWrite(LED_BUILTIN, HIGH); // Turn on built-in LED to indicate that Teensy is alive
     
     baro.init();
+    baro.update(); // Perform initial reading to initialize internal altitude state
     maxAltitude = baro.getAlt(); // Set initial max altitude to current altitude for accurate apogee detection
 
     imu.init();
